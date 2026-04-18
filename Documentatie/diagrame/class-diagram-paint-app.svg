@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <defs>
+    <style>
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .name { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .stereo { font: italic 14px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .text { font: 15px 'Consolas', 'Courier New', monospace; fill: #111827; }
+      .box { fill: #ffffff; stroke: #1e293b; stroke-width: 2; }
+      .header { fill: #e2e8f0; stroke: #1e293b; stroke-width: 2; }
+      .line { stroke: #0f172a; stroke-width: 2; fill: none; }
+      .dash { stroke: #0f172a; stroke-width: 2; stroke-dasharray: 8 6; fill: none; }
+      .note { font: 14px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a"/>
+    </marker>
+    <marker id="diamond" markerWidth="18" markerHeight="12" refX="2" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 6 L 8 0 L 16 6 L 8 12 z" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="980" fill="#ffffff"/>
+  <text x="750" y="44" text-anchor="middle" class="title">Class Diagram - Paint App</text>
+
+  <g transform="translate(70,100)">
+    <rect width="320" height="210" class="box"/>
+    <rect width="320" height="44" class="header"/>
+    <text x="160" y="28" text-anchor="middle" class="name">MainCanvasForm</text>
+    <line x1="0" y1="92" x2="320" y2="92" class="line"/>
+    <text x="16" y="70" class="text">- currentTool: IDrawStrategy</text>
+    <text x="16" y="88" class="text">- historyManager: CommandManager</text>
+    <text x="16" y="106" class="text">- currentImage: Bitmap</text>
+    <text x="16" y="124" class="text">- selectedColor: Color</text>
+    <text x="16" y="142" class="text">- selectedThickness: float</text>
+    <line x1="0" y1="150" x2="320" y2="150" class="line"/>
+    <text x="16" y="174" class="text">+ SetCanvasImage(image)</text>
+    <text x="16" y="192" class="text">+ SaveCanvasToDisk()</text>
+    <text x="16" y="210" class="text">+ DrawOnBitmap(start, end)</text>
+  </g>
+
+  <g transform="translate(520,90)">
+    <rect width="290" height="120" class="box"/>
+    <rect width="290" height="44" class="header"/>
+    <text x="145" y="22" text-anchor="middle" class="stereo">&lt;&lt;interface&gt;&gt;</text>
+    <text x="145" y="38" text-anchor="middle" class="name">IDrawStrategy</text>
+    <line x1="0" y1="76" x2="290" y2="76" class="line"/>
+    <text x="16" y="100" class="text">+ DisplayName: string</text>
+    <text x="16" y="118" class="text">+ Draw(g, start, end, pen)</text>
+  </g>
+
+  <g transform="translate(500,280)">
+    <rect width="170" height="90" class="box"/>
+    <rect width="170" height="38" class="header"/>
+    <text x="85" y="25" text-anchor="middle" class="name">PencilTool</text>
+    <text x="16" y="66" class="text">+ Draw(...)</text>
+  </g>
+
+  <g transform="translate(710,280)">
+    <rect width="170" height="90" class="box"/>
+    <rect width="170" height="38" class="header"/>
+    <text x="85" y="25" text-anchor="middle" class="name">LineTool</text>
+    <text x="16" y="66" class="text">+ Draw(...)</text>
+  </g>
+
+  <g transform="translate(500,410)">
+    <rect width="190" height="90" class="box"/>
+    <rect width="190" height="38" class="header"/>
+    <text x="95" y="25" text-anchor="middle" class="name">RectangleTool</text>
+    <text x="16" y="66" class="text">+ Draw(...)</text>
+  </g>
+
+  <g transform="translate(730,410)">
+    <rect width="170" height="90" class="box"/>
+    <rect width="170" height="38" class="header"/>
+    <text x="85" y="25" text-anchor="middle" class="name">EllipseTool</text>
+    <text x="16" y="66" class="text">+ Draw(...)</text>
+  </g>
+
+  <g transform="translate(1080,90)">
+    <rect width="320" height="165" class="box"/>
+    <rect width="320" height="44" class="header"/>
+    <text x="160" y="28" text-anchor="middle" class="name">CommandManager</text>
+    <line x1="0" y1="96" x2="320" y2="96" class="line"/>
+    <text x="16" y="70" class="text">- undoStack: Stack&lt;ICommand&gt;</text>
+    <text x="16" y="88" class="text">- redoStack: Stack&lt;ICommand&gt;</text>
+    <line x1="0" y1="114" x2="320" y2="114" class="line"/>
+    <text x="16" y="138" class="text">+ ExecuteCommand(command)</text>
+    <text x="16" y="156" class="text">+ Undo()</text>
+  </g>
+
+  <g transform="translate(1085,340)">
+    <rect width="250" height="110" class="box"/>
+    <rect width="250" height="44" class="header"/>
+    <text x="125" y="22" text-anchor="middle" class="stereo">&lt;&lt;interface&gt;&gt;</text>
+    <text x="125" y="38" text-anchor="middle" class="name">ICommand</text>
+    <line x1="0" y1="76" x2="250" y2="76" class="line"/>
+    <text x="16" y="98" class="text">+ Execute()</text>
+    <text x="16" y="116" class="text">+ Undo()</text>
+  </g>
+
+  <g transform="translate(1050,560)">
+    <rect width="330" height="190" class="box"/>
+    <rect width="330" height="44" class="header"/>
+    <text x="165" y="28" text-anchor="middle" class="name">DrawCommand</text>
+    <line x1="0" y1="110" x2="330" y2="110" class="line"/>
+    <text x="16" y="72" class="text">- previousState: Bitmap</text>
+    <text x="16" y="90" class="text">- newState: Bitmap</text>
+    <text x="16" y="108" class="text">- targetCanvas: ICanvasHost</text>
+    <line x1="0" y1="128" x2="330" y2="128" class="line"/>
+    <text x="16" y="152" class="text">+ Execute()</text>
+    <text x="16" y="170" class="text">+ Undo()</text>
+    <text x="16" y="188" class="text">+ Dispose()</text>
+  </g>
+
+  <g transform="translate(130,620)">
+    <rect width="250" height="110" class="box"/>
+    <rect width="250" height="44" class="header"/>
+    <text x="125" y="22" text-anchor="middle" class="stereo">&lt;&lt;interface&gt;&gt;</text>
+    <text x="125" y="38" text-anchor="middle" class="name">ICanvasHost</text>
+    <line x1="0" y1="76" x2="250" y2="76" class="line"/>
+    <text x="16" y="100" class="text">+ SetCanvasImage(image)</text>
+  </g>
+
+  <line x1="390" y1="190" x2="520" y2="150" class="line" marker-end="url(#arrow)"/>
+  <text x="425" y="155" class="note">uses currentTool</text>
+
+  <line x1="390" y1="165" x2="1080" y2="165" class="line" marker-end="url(#arrow)"/>
+  <text x="720" y="145" class="note">manages history</text>
+
+  <line x1="585" y1="280" x2="620" y2="210" class="dash" marker-end="url(#arrow)"/>
+  <line x1="795" y1="280" x2="705" y2="210" class="dash" marker-end="url(#arrow)"/>
+  <line x1="595" y1="410" x2="640" y2="210" class="dash" marker-end="url(#arrow)"/>
+  <line x1="815" y1="410" x2="690" y2="210" class="dash" marker-end="url(#arrow)"/>
+
+  <line x1="1210" y1="255" x2="1210" y2="340" class="line" marker-start="url(#diamond)" marker-end="url(#arrow)"/>
+  <text x="1225" y="305" class="note">stores *</text>
+
+  <line x1="1210" y1="560" x2="1210" y2="450" class="dash" marker-end="url(#arrow)"/>
+  <line x1="380" y1="675" x2="1050" y2="655" class="line" marker-end="url(#arrow)"/>
+  <text x="670" y="640" class="note">targetCanvas</text>
+
+  <line x1="250" y1="620" x2="230" y2="310" class="dash" marker-end="url(#arrow)"/>
+
+  <rect x="420" y="835" width="660" height="84" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="750" y="865" text-anchor="middle" class="note">The diagram shows the Strategy pattern for drawing tools and the Command pattern for Undo/Redo.</text>
+  <text x="750" y="890" text-anchor="middle" class="note">MainCanvasForm integrates the GUI layer with DrawingTools.dll and StateManager.dll.</text>
+</svg>
