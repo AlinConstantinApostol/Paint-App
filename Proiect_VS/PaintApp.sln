@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingTools", "DrawingTool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateManager", "StateManager\StateManager.csproj", "{8ECEC80F-D21B-4E50-BF5D-E9ED732EF14A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintApp.Tests", "PaintApp.Tests\PaintApp.Tests.csproj", "{B4C270EF-7B0A-4F50-87E8-28F5F99AD2CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8ECEC80F-D21B-4E50-BF5D-E9ED732EF14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECEC80F-D21B-4E50-BF5D-E9ED732EF14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECEC80F-D21B-4E50-BF5D-E9ED732EF14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C270EF-7B0A-4F50-87E8-28F5F99AD2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C270EF-7B0A-4F50-87E8-28F5F99AD2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C270EF-7B0A-4F50-87E8-28F5F99AD2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C270EF-7B0A-4F50-87E8-28F5F99AD2CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
