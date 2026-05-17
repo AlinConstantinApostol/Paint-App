@@ -568,6 +568,14 @@ public partial class MainCanvasForm : Form, ICanvasHost
 
     private void HelpToolStripButton_Click(object sender, EventArgs e)
     {
-        Help.ShowHelp(this, "SharpPaintHelp.chm");
+        try
+        {
+            Help.ShowHelp(this, "chm_help.chm");
+
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(this, $"Eroare la deschiderea documentatiei de ajutor:\n{ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
