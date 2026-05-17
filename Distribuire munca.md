@@ -58,7 +58,7 @@
 - manualul Help;
 - setul de cazuri de test.
 
-## 8. Avantajele acestei împărțiri
+##  Avantajele acestei împărțiri
 
 Această împărțire este eficientă deoarece:
 
