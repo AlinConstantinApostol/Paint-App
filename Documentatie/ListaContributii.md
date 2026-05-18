@@ -20,7 +20,7 @@ Basu Stefan – Modulul de desen DrawingTools.dll
     * DrawingTools/EllipseTool.cs – a implementat desenarea cercurilor/elipselor.
     * A asigurat extensibilitatea modulului, astfel încât să poată fi adăugate ulterior unelte noi.
 
-Membrul 3 – Gestionarea stării, salvare și robustețe
+Apostol Alin-Constantin – Gestionarea stării, salvare și robustețe
     * StateManager/ICommand.cs – a definit contractul pentru comenzile anulabile.
     * StateManager/ICanvasHost.cs – a definit interfața dintre managerul de stare și canvas.
     * StateManager/DrawCommand.cs – a implementat comanda de desen, cu starea anterioară și starea 
