@@ -32,7 +32,7 @@ Membrul 3 – Gestionarea stării, salvare și robustețe
     * PaintApp/Program.cs și PaintApp/MainCanvasForm.cs – a tratat excepțiile la nivel global și 
         local, pentru a preveni închiderea bruscă a aplicației.
 
-Membrul 4 – Testare și documentație
+Buzatu Stefan – Testare și documentație
     * PaintApp.Tests/PaintApp.Tests.csproj – a configurat proiectul de testare MSTest pentru 
         integrarea cu Test Explorer din Visual Studio.
     * PaintApp.Tests/DrawingToolsTests.cs – a scris testele automate pentru uneltele de desen.
