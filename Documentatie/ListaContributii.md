@@ -9,7 +9,7 @@ Vrînceanu Sterică – Interfață grafică și integrarea aplicației
     * PaintApp/DoubleBufferedPanel.cs – a implementat componenta pentru desenare fluentă, fără flicker.
     * A avut rolul de integrare între GUI, DrawingTools.dll și StateManager.dll.
 
-Membrul 2 – Modulul de desen DrawingTools.dll
+Basu Stefan – Modulul de desen DrawingTools.dll
     * DrawingTools/IDrawStrategy.cs – a definit interfața comună pentru toate instrumentele de 
         desen.
     * DrawingTools/ShapeToolBase.cs – a implementat logica de bază reutilizabilă pentru formele geometrice, 
