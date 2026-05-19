@@ -1,8 +1,17 @@
-/*
- * Program.cs
- * Entry point for the Paint App desktop application.
- * The file also centralizes global exception handling for the UI thread.
- */
+/*************************************************************************
+ *                                                                       *
+ * File:          Program.cs                                             *
+ * Copyright:     (c) 2026, Vrinceanu Sterica                            *
+ * E-mail:        sterica.vrinceanu@student.tuiasi.ro                    *
+ * Description:   Initializes the program.                               *
+ *                                                                       *
+ * This code and information is provided "as is" without warranty of     *
+ * any kind, either expressed or implied, including but not limited      *
+ * to the implied warranties of merchantability or fitness for a         *
+ * particular purpose. You are free to use this source code in your      *
+ * applications as long as the original copyright notice is included.    *
+ *                                                                       *
+ *************************************************************************/
 
 using System.Threading;
 

@@ -1,3 +1,18 @@
+/*************************************************************************
+ *                                                                       *
+ * File:          MainCanvasForm.Designer.cs                             *
+ * Copyright:     (c) 2026, Vrinceanu Sterica                            *
+ * E-mail:        sterica.vrinceanu@student.tuiasi.ro                    *
+ * Description:   Designer code for the main canvas of the application.  *
+ *                                                                       *
+ * This code and information is provided "as is" without warranty of     *
+ * any kind, either expressed or implied, including but not limited      *
+ * to the implied warranties of merchantability or fitness for a         *
+ * particular purpose. You are free to use this source code in your      *
+ * applications as long as the original copyright notice is included.    *
+ *                                                                       *
+ *************************************************************************/
+
 namespace PaintApp;
 
 partial class MainCanvasForm

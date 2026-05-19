@@ -1,4 +1,18 @@
-// ICanvasHost.cs - abstraction used by history commands to replace the visible image.
+/*************************************************************************
+ *                                                                       *
+ * File:          ICanvasHost.cs                                         *
+ * Copyright:     (c) 2026, Apostol Alin-Constantin                      *
+ * E-mail:        alin-constantin.apostol@student.tuiasi.ro              *
+ * Description:   Defines the ICanvasHost interface for accepting        *
+ *                canvas images.                                         *
+ *                                                                       *
+ * This code and information is provided "as is" without warranty of     *
+ * any kind, either expressed or implied, including but not limited      *
+ * to the implied warranties of merchantability or fitness for a         *
+ * particular purpose. You are free to use this source code in your      *
+ * applications as long as the original copyright notice is included.    *
+ *                                                                       *
+ *************************************************************************/
 
 using System.Drawing;
 
